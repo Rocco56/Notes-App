@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 3rem;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+
+  flex-wrap: wrap;
+  background-color: rgb(126, 227, 227);
+}
+
+.note {
+  width: 250px;
+  margin: 20px;
+  height: 250px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  border-radius: 10px;
+}
+
+.note .tools {
+  background-color: rgb(120, 237, 120);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note .tools button {
+  margin-left: 7px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1rem;
+  color: rgb(95, 92, 92);
+}
+
+.note .main {
+  width: 100%;
+  overflow: hidden;
+  height: 250px;
+  background-color: white;
+  font-family: inherit;
+}
+
+.note textarea {
+  width: 100%;
+  height: 250px;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.note .hidden {
+  display: none;
+}
+
+.add {
+  position: fixed;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  background-color: #9ec862;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.add:hover {
+  background-color: #85c629;
+}
